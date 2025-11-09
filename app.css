@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 10rem;
+  align-items: center;
+}
+
+header .logo img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+header nav .menu {
+  display: flex;
+  list-style: none;
+}
+
+header nav .menu li {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+header nav .menu li:hover a,
+header nav .menu li.active a {
+  color: #007bff;
+}
+
+header nav .menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.section-product h1,
+.section-contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.products {
+  display: flex;
+  margin: 1rem 10rem;
+}
+
+.products .product-item {
+  margin-left: 2rem;
+}
+
+.products .product-item img {
+  width: 100%;
+  height: auto;
+
+  transition: border-radius 0.3s ease-in-out;
+}
+
+.products .product-item:hover img {
+  border-radius: 3rem 0 3rem 0;
+}
